@@ -33,14 +33,15 @@ namespace Astana
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_closeForm = new System.Windows.Forms.Button();
             this.myDataGrid1 = new Astana.MyDataGrid();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_success = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.myDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +98,30 @@ namespace Astana
             this.myDataGrid1.Size = new System.Drawing.Size(1526, 756);
             this.myDataGrid1.TabIndex = 31;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Begin";
+            this.Column1.FillWeight = 200F;
+            this.Column1.HeaderText = "Время начала";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "End";
+            this.Column2.FillWeight = 200F;
+            this.Column2.HeaderText = "Время завершения";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Message";
+            this.Column3.FillWeight = 500F;
+            this.Column3.HeaderText = "Сообщение";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
             // dateTimePickerStart
             // 
             this.dateTimePickerStart.CustomFormat = "dd.MM.yyyy HH:mm:ss";
@@ -142,6 +167,7 @@ namespace Astana
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.myDataGrid1);
             this.panel1.Controls.Add(this.btn_closeForm);
             this.panel1.Controls.Add(this.btn_success);
@@ -154,29 +180,18 @@ namespace Astana
             this.panel1.Size = new System.Drawing.Size(1556, 834);
             this.panel1.TabIndex = 36;
             // 
-            // Column1
+            // label2
             // 
-            this.Column1.DataPropertyName = "Begin";
-            this.Column1.FillWeight = 200F;
-            this.Column1.HeaderText = "Время начала";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "End";
-            this.Column2.FillWeight = 200F;
-            this.Column2.HeaderText = "Время завершения";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Message";
-            this.Column3.FillWeight = 500F;
-            this.Column3.HeaderText = "Сообщение";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(635, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(274, 36);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Архив сообщений";
             // 
             // JournalMessageArhive
             // 
@@ -208,5 +223,6 @@ namespace Astana
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Label label2;
     }
 }

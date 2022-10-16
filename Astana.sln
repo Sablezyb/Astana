@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astana", "Astana\Astana.csproj", "{30D8D949-0D67-446A-8206-AB69A780D6DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30D8D949-0D67-446A-8206-AB69A780D6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D8D949-0D67-446A-8206-AB69A780D6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D8D949-0D67-446A-8206-AB69A780D6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D8D949-0D67-446A-8206-AB69A780D6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27590F48-8410-47D2-8C41-899845709D9D}
+	EndGlobalSection
+EndGlobal
